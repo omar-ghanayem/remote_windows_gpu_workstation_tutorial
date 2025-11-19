@@ -20,7 +20,7 @@ This is a very specific tutorial that can be modified for other configurations.
 - **Client**: macOS (user `kathleenhiggins`)  
 - You already installed **Conda** on Windows (full Anaconda or Miniconda is fine)
 
-*** A big note here. This tutorial is easily modifiable for other usernames/setups. Wherever you see "schot," that's our Windows local account username in the tutorial. Wherever you see "kathleenhiggins," that's the username that is attempting to SSH in to the Windows machine. ***
+***A big note here. This tutorial is easily modifiable for other usernames/setups. Wherever you see "schot," that's our Windows local account username in the tutorial. Wherever you see "kathleenhiggins," that's the username that is attempting to SSH in to the Windows machine.***
 
 ---
 
