@@ -1,4 +1,4 @@
-# Remote Windows GPU Workstation Setup  
+# How to Turn a Windows 11 NVIDIA GPU Workstation Into a Remote SSH Server (CUDA + OpenSSH + macOS/Linux Client)
 **(RTX A400 · CUDA 13.0 · Windows 11 Pro · macOS client · SSH + Key Auth)**
 
 This document describes how to:
