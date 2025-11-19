@@ -41,6 +41,7 @@ Open **Command Prompt** or **PowerShell** on the Windows workstation and run:
 nvidia-smi`
 
 You should see something like:
+```
 Tue Nov 18 23:15:12 2025
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 581.80                 Driver Version: 581.80         CUDA Version: 13.0     |
@@ -52,7 +53,7 @@ Tue Nov 18 23:15:12 2025
 |   0  NVIDIA RTX A400              TCC   |   00000000:01:00.0 Off |                  N/A |
 | 30%   29C    P8            N/A  /   50W |      10MiB /   4094MiB |      0%      Default |
 +-----------------------------------------------------------------------------------------+
-
+```
 The important bits:
 	•	Driver Version matches what you installed.
 	•	CUDA Version shows 13.0 (this is the maximum CUDA your driver supports).
@@ -70,7 +71,7 @@ For PyTorch, you mainly care that:
 
 # 3. Enable OpenSSH Server on Windows 
 This uses the built-in Windows OpenSSH, not the GitHub/portable build.
-- Open PowerShell as Administrator and run:
+Open PowerShell as Administrator and run:
   ```
   # See what OpenSSH capabilities are available
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
@@ -81,28 +82,39 @@ Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ### Install the server
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
-
-- You should then see:
-  `Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+You should then see:
+```
+Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 
 Name  : OpenSSH.Client~~~~0.0.1.0
 State : Installed
 
 Name  : OpenSSH.Server~~~~0.0.1.0
-State : Installed`
+State : Installed
+```
 ## 3.1 Check sshd service 
 Now, this is where things can get a bit tricky. 
 Check service status:
-  `Get-Service sshd
-Get-Service ssh-agent`
+```
+Get-Service sshd
+Get-Service ssh-agent
+```
+
 You might see something like:
+
 ```
 Status   Name               DisplayName
 ------   ----               -----------
 Stopped  sshd               OpenSSH SSH Server
 Stopped  ssh-agent          OpenSSH Authentication Agent
 ```
+
 Try to start:
+
 ```
 Start-Service sshd
 ```
+
+If this fails, don't worry, there's a workaround. Running sshd directly works, and we'll use that as a workaround in section 6.
+# 4. Check and Edit sshd_config
+The default config lives at: 
