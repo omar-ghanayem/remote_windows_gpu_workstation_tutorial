@@ -71,14 +71,16 @@ For PyTorch, you mainly care that:
 # 3. Enable OpenSSH Server on Windows 
 This uses the built-in Windows OpenSSH, not the GitHub/portable build.
 - Open PowerShell as Administrator and run:
-  ```# See what OpenSSH capabilities are available
+  ```
+  # See what OpenSSH capabilities are available
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 
 ### Install the client (for convenience)
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 
 ### Install the server
-Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0```
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+```
 
 - You should then see:
   `Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
