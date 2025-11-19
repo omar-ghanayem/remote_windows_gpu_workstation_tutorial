@@ -92,6 +92,17 @@ Name  : OpenSSH.Server~~~~0.0.1.0
 State : Installed`
 ## 3.1 Check sshd service 
 Now, this is where things can get a bit tricky. 
-- Check service status:
+Check service status:
   `Get-Service sshd
 Get-Service ssh-agent`
+You might see something like:
+```
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  sshd               OpenSSH SSH Server
+Stopped  ssh-agent          OpenSSH Authentication Agent
+```
+Try to start:
+```
+Start-Service sshd
+```
